@@ -42,6 +42,10 @@ Funcionaminto:
 
 El funcionamiento de esta aplicacion consiste en ejecutar un crud. Adicioanlmente para utilizarla, el usuario debera registrarse y loguearse, cabe destacar que cada regitro sera independiente y unico y unico para cada usuario.
 
+Observaciones:
+
+se debe importar dotenv al principio del index para evitar errores de conexion con mongoose, ya que fue un dolor de cabeza.
+
 Gracias por leerme...
 
 Danlois Tovar - Web Developer.
