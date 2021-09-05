@@ -1,0 +1,38 @@
+<div class="col-md-4 mx-auto">
+
+	<div class="card">
+
+		<div class="card-header">
+			<h3>Editar Nota</h3>
+		</div>
+
+		<div class="card-body">
+
+			<form action="/notas/editar/{{verNotasAEditar.id}}?_method=PUT" method="POST">
+				{{!-- agregar para activar el metodo over-ride --}}
+				<input type="hidden" name="_method" value="PUT">
+
+				<div class="form-group">
+
+					<input type="text" class="form-control" name="titulo" value="{{verNotasAEditar.titulo}}">
+
+				</div>
+
+				<div class=" form-group">
+
+					<textarea name="descripcion" class="form-control">{{verNotasAEditar.descripcion}}</textarea>
+
+				</div>
+
+				<div class=" form-group">
+					<button class="btn btn-primary btn-block" type="submit">
+						Guardar
+					</button>
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+
+</div>

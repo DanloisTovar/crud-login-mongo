@@ -1,0 +1,35 @@
+{{!-- mensajes de exito --}}
+{{#if mensajeDeExito}}
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+	{{mensajeDeExito}}
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+{{/if}}
+
+{{!-- mensajes de errores --}}
+{{#if mensajeDeErrores}}
+
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+	{{mensajeDeErrores}}
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+{{/if}}
+
+{{!-- mensaje de logout --}}
+{{#if mensajeDelogout}}
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+	{{mensajeDelogout}}
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+
+{{/if}}

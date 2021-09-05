@@ -1,0 +1,30 @@
+<div class="row">
+
+	{{#each mostrarNotas}}
+
+	<div class="col-md-3 my-2">
+
+		<div class="card">
+
+			<div class="card-body">
+				<h4 class="card-title d-flex justify-content-between align-items-center">
+					{{titulo}} <a href="/notas/editar/{{_id}}"><i class="fa fa-edit"></i></a>
+				</h4>
+				<p>{{descripcion}}</p>
+
+				<form action="/notas/borrar/{{_id}}?_method=DELETE" method="POST">
+
+					{{!-- agregar para activar el metodo over-ride --}}
+					<input type="hidden" name="_method" value="DELETE">
+
+					<button class="btn btn-danger btn-block btn-sm" type="submit">Borrar</button>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+	{{/each}}
+
+</div>
