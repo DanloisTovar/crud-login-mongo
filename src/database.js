@@ -8,6 +8,7 @@ mongoose
   .connect(MONGODB_URI, {
     // resuelve error:
     useUnifiedTopology: true,
+    useCreateIndex: true,
     useNewUrlParser: true,
   })
 
@@ -15,5 +16,6 @@ mongoose
     console.log('La base de datos se ha conectado de manera exitosa!!!');
   })
   .catch((err) => {
+    console.log('No se ha podido conetar a la base de datos!!! \n');
     console.log(err);
   });
