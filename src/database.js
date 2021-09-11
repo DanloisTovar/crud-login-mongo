@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const { APP_NOTAS_HOST, APP_NOTAS_DATABASE_NOMBRE } = process.env;
 
-const MONGODB_URI = `mongodb+srv://Danlois:3385@cluster0.txs6b.mongodb.net/crud-login-dan?retryWrites=true&w=majority`;
+const MONGODB_URI = `mongodb+srv://${APP_NOTAS_HOST}/${APP_NOTAS_DATABASE_NOMBRE}`;
 mongoose
   .connect(MONGODB_URI, {
     // resuelve error:
